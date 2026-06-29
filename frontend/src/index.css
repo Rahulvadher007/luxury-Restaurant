@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B89028;
+}
+
+/* Custom Selection */
+::selection {
+  background: #D4AF37;
+  color: #0F0F0F;
+}
+
+/* Base style resets */
+body {
+  background-color: #0F0F0F;
+  color: #F8F4E9;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Golden Glow Animations & Transitions */
+.gold-glow-hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.45);
+  border-color: #D4AF37;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF 0%, #D4AF37 50%, #B89028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom font styling helper */
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Masonry Aspect Ratio helper */
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
